@@ -1,15 +1,19 @@
 # ASIP
 Code for our paper ASIP: **Accurate and Steady Inertial Pose Estimation through Sequence Structure Learning and Modulation**. 
 
+## Overview
 ![teaser](figures/teaser.png)
+Left: we use only six IMUs to predict the full-body pose in real-time, which are fixed on left and right forearm, the left and right lower leg, the head, and the pelvis. Right: our system is capable of capturing a wide range of daily motions as well as challenging movements.
 
+You can view more real-time motion capture results here. 
 ## Environment Setup
 
 ### Install dependencies
 We use ```python 3.7.6```. You should install the newest ```pytorch chumpy vctoolkit open3d```.
 
 ### Prepare SMPL body model
-Download SMPL model from [here](https://smpl.is.tue.mpg.de/). You should click SMPL for Python and download the version 1.0.0 for Python 2.7 (10 shape PCs). Then unzip it.
+1. Download SMPL model from [here](https://smpl.is.tue.mpg.de/). 
+2. You should click SMPL for Python and download the version 1.0.0 for Python 2.7 (10 shape PCs). Then unzip it.
 
 ### Prepare pre-trained model
 1. You can download our pre-trained model from [here](https://pan.baidu.com/s/1BxD0FC19Lxy_bf3aOeNaLw?pwd=lhu7).
@@ -31,10 +35,12 @@ We thank that these two repositories [Transpose](https://github.com/Xinyu-Yi/Tra
 
 If you find the project helpful, please consider citing us:
 ```bibtext
-@inproceedings{asip,
-  title={Accurate and Steady Inertial Pose Estimation through Sequence Structure Learning and Modulation},
+@article{wu2024accurate,
+  title={Accurate and steady inertial pose estimation through sequence structure learning and modulation},
   author={Wu, Yinghao and Wang, Chaoran and Yin, Lu and Guo, Shihui and Qin, Yipeng},
-  booktitle={NeurIPS},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={42468--42493},
   year={2024}
 }
 ```
