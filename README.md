@@ -10,12 +10,15 @@ We use ```python 3.7.6```. You should install the newest ```pytorch chumpy vctoo
 Download SMPL model from [here](https://smpl.is.tue.mpg.de/). You should click SMPL for Python and download the version 1.0.0 for Python 2.7 (10 shape PCs). Then unzip it.
 
 ### Prepare pre-trained model
-You can download our pre-trained model from [here](https://pan.baidu.com/s/1BxD0FC19Lxy_bf3aOeNaLw?pwd=lhu7).
+1. You can download our pre-trained model from [here](https://pan.baidu.com/s/1BxD0FC19Lxy_bf3aOeNaLw?pwd=lhu7).
+2. Unzip it and put the `ck.bin` file into `./checkpoint`.
 
 ## Preprocessing Data
 - Following [Transpose](https://github.com/Xinyu-Yi/TransPose), we preprocess the AMASS, DIP and TotalCapture datasets.
 - Following [DynaIP](https://github.com/dx118/dynaip), we preprocess the AnDy and CIP datasets.
 - The raw data of these datasets can be downloaded from [AMASS](https://amass.is.tue.mpg.de/), [DIP](https://dip.is.tue.mpg.de/), [TotalCapture](https://cvssp.org/data/totalcapture/), [AnDy](https://zenodo.org/records/3254403) and [CIP](https://zenodo.org/records/5801928).
+
+We have provided preprocessed test data, which you can download [here](https://pan.baidu.com/s/1BxD0FC19Lxy_bf3aOeNaLw?pwd=lhu7).  Unzip it and put them into `./dataset/eval_set`. Please note that by downloading the preprocessed datasets you agree to the same license conditions as for the papers, e.g., DIP-IMU dataset (https://dip.is.tue.mpg.de/) and the TotalCapture dataset (https://cvssp.org/data/totalcapture/). You may only use the data for scientific purposes and cite the corresponding papers.
 
 ## Running the Evaluation
 ```python common/eval_all.py```
