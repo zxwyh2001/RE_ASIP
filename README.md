@@ -1,6 +1,8 @@
 # ASIP
 Code for our paper ASIP: **Accurate and Steady Inertial Pose Estimation through Sequence Structure Learning and Modulation**. 
 
+![teaser](figures/teaser.png)
+
 ## Environment Setup
 
 ### Install dependencies
