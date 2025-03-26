@@ -10,7 +10,7 @@ We use ```python 3.7.6```. You should install the newest ```pytorch chumpy vctoo
 Download SMPL model from [here](https://smpl.is.tue.mpg.de/). You should click SMPL for Python and download the version 1.0.0 for Python 2.7 (10 shape PCs). Then unzip it.
 
 ### Prepare pre-trained model
-
+You can download our pre-trained model from [here](https://pan.baidu.com/s/1BxD0FC19Lxy_bf3aOeNaLw?pwd=lhu7).
 
 ## Preprocessing Data
 - Following [Transpose](https://github.com/Xinyu-Yi/TransPose), we preprocess the AMASS, DIP and TotalCapture datasets.
